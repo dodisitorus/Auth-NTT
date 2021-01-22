@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		596B321721445204E7CC1A2B /* Pods_Auth_NTT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782D1F14FB2DE85B7FFD3DF /* Pods_Auth_NTT.framework */; };
+		9426D8CB25B9243C00044A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D8CA25B9243C00044A26 /* AppDelegate.swift */; };
+		9426D8E325B9252B00044A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9426D8E225B9252B00044A26 /* Assets.xcassets */; };
+		9426D8F125B9269500044A26 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9426D8F325B9269500044A26 /* Localizable.strings */; };
+		9426D91525B92CA300044A26 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D90925B92CA300044A26 /* LoginInteractor.swift */; };
+		9426D91625B92CA300044A26 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D90A25B92CA300044A26 /* LoginContract.swift */; };
+		9426D91725B92CA300044A26 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D90B25B92CA300044A26 /* LoginViewController.swift */; };
+		9426D91825B92CA300044A26 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D90C25B92CA300044A26 /* LoginPresenter.swift */; };
+		9426D91925B92CA300044A26 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D90D25B92CA300044A26 /* LoginRouter.swift */; };
+		9426D92425B92D3700044A26 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D92225B92D3700044A26 /* APIClient.swift */; };
+		9426D92525B92D3700044A26 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D92325B92D3700044A26 /* APIManager.swift */; };
+		9426D92C25B92D4200044A26 /* ViewController+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D92A25B92D4200044A26 /* ViewController+Extention.swift */; };
+		9426D93525B92D5D00044A26 /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D93025B92D5D00044A26 /* KeyStore.swift */; };
+		9426D93625B92D5D00044A26 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D93125B92D5D00044A26 /* LocalStore.swift */; };
+		9426D93725B92D5D00044A26 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D93325B92D5D00044A26 /* Endpoints.swift */; };
+		9426D93C25B92D6A00044A26 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9426D93B25B92D6A00044A26 /* AuthService.swift */; };
+		9426D94C25B92D7700044A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9426D94225B92D7700044A26 /* LaunchScreen.storyboard */; };
+		9426D94D25B92D7700044A26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9426D94425B92D7700044A26 /* Main.storyboard */; };
+		9426D94E25B92D7700044A26 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9426D94625B92D7700044A26 /* Login.storyboard */; };
+		946668F425BA7E4C00A982BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 946668F325BA7E4C00A982BA /* GoogleService-Info.plist */; };
+		94F2319B25B98B68002F08DC /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F2319525B98B68002F08DC /* Detail.storyboard */; };
+		94F2319C25B98B68002F08DC /* DetailContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2319625B98B68002F08DC /* DetailContract.swift */; };
+		94F2319D25B98B68002F08DC /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2319725B98B68002F08DC /* DetailPresenter.swift */; };
+		94F2319E25B98B68002F08DC /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2319825B98B68002F08DC /* DetailRouter.swift */; };
+		94F2319F25B98B68002F08DC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2319925B98B68002F08DC /* DetailViewController.swift */; };
+		94F231A025B98B68002F08DC /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F2319A25B98B68002F08DC /* DetailInteractor.swift */; };
+		94F231A925B98BB3002F08DC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94F231A325B98BB3002F08DC /* Home.storyboard */; };
+		94F231AA25B98BB3002F08DC /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231A425B98BB3002F08DC /* HomeContract.swift */; };
+		94F231AB25B98BB3002F08DC /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231A525B98BB3002F08DC /* HomePresenter.swift */; };
+		94F231AC25B98BB3002F08DC /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231A625B98BB3002F08DC /* HomeRouter.swift */; };
+		94F231AD25B98BB3002F08DC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231A725B98BB3002F08DC /* HomeViewController.swift */; };
+		94F231AE25B98BB3002F08DC /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231A825B98BB3002F08DC /* HomeInteractor.swift */; };
+		94F231D325B9E6F2002F08DC /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231D225B9E6F2002F08DC /* BookService.swift */; };
+		94F231D625B9EBEE002F08DC /* ErrorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231D525B9EBEE002F08DC /* ErrorService.swift */; };
+		94F231DA25B9EE0E002F08DC /* ConvertData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231D925B9EE0E002F08DC /* ConvertData.swift */; };
+		94F231DD25B9F15C002F08DC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F231DC25B9F15C002F08DC /* Book.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0782D1F14FB2DE85B7FFD3DF /* Pods_Auth_NTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Auth_NTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B24BD86212375EC3146F655 /* Pods-Auth NTT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth NTT.release.xcconfig"; path = "Target Support Files/Pods-Auth NTT/Pods-Auth NTT.release.xcconfig"; sourceTree = "<group>"; };
+		9426D8C725B9243C00044A26 /* Auth NTT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auth NTT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9426D8CA25B9243C00044A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9426D8D825B9243D00044A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9426D8E225B9252B00044A26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9426D8F225B9269500044A26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9426D8F525B9269900044A26 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9426D90925B92CA300044A26 /* LoginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		9426D90A25B92CA300044A26 /* LoginContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		9426D90B25B92CA300044A26 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9426D90C25B92CA300044A26 /* LoginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		9426D90D25B92CA300044A26 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9426D92225B92D3700044A26 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		9426D92325B92D3700044A26 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9426D92A25B92D4200044A26 /* ViewController+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+Extention.swift"; sourceTree = "<group>"; };
+		9426D93025B92D5D00044A26 /* KeyStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
+		9426D93125B92D5D00044A26 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		9426D93325B92D5D00044A26 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		9426D93B25B92D6A00044A26 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9426D94325B92D7700044A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9426D94525B92D7700044A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9426D94625B92D7700044A26 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		946668F325BA7E4C00A982BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94F2316425B97941002F08DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		94F2316625B97944002F08DC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		94F2319525B98B68002F08DC /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		94F2319625B98B68002F08DC /* DetailContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContract.swift; sourceTree = "<group>"; };
+		94F2319725B98B68002F08DC /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		94F2319825B98B68002F08DC /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		94F2319925B98B68002F08DC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		94F2319A25B98B68002F08DC /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		94F231A325B98BB3002F08DC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		94F231A425B98BB3002F08DC /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		94F231A525B98BB3002F08DC /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		94F231A625B98BB3002F08DC /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		94F231A725B98BB3002F08DC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		94F231A825B98BB3002F08DC /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		94F231CE25B9E301002F08DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		94F231D025B9E303002F08DC /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Main.strings; sourceTree = "<group>"; };
+		94F231D225B9E6F2002F08DC /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
+		94F231D525B9EBEE002F08DC /* ErrorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorService.swift; sourceTree = "<group>"; };
+		94F231D925B9EE0E002F08DC /* ConvertData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertData.swift; sourceTree = "<group>"; };
+		94F231DC25B9F15C002F08DC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		A5A8CC107F1A5465C7CCA271 /* Pods-Auth NTT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Auth NTT.debug.xcconfig"; path = "Target Support Files/Pods-Auth NTT/Pods-Auth NTT.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9426D8C425B9243C00044A26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596B321721445204E7CC1A2B /* Pods_Auth_NTT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		465E274A59FF464B5E1D393C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5A8CC107F1A5465C7CCA271 /* Pods-Auth NTT.debug.xcconfig */,
+				2B24BD86212375EC3146F655 /* Pods-Auth NTT.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		896BDD4BA110EE4C169BEBB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0782D1F14FB2DE85B7FFD3DF /* Pods_Auth_NTT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9426D8BE25B9243C00044A26 = {
+			isa = PBXGroup;
+			children = (
+				9426D8C925B9243C00044A26 /* Auth NTT */,
+				9426D8C825B9243C00044A26 /* Products */,
+				465E274A59FF464B5E1D393C /* Pods */,
+				896BDD4BA110EE4C169BEBB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9426D8C825B9243C00044A26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9426D8C725B9243C00044A26 /* Auth NTT.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9426D8C925B9243C00044A26 /* Auth NTT */ = {
+			isa = PBXGroup;
+			children = (
+				9426D8F725B926C300044A26 /* Classes */,
+				9426D8E125B9252200044A26 /* Resources */,
+				9426D8D825B9243D00044A26 /* Info.plist */,
+				946668F325BA7E4C00A982BA /* GoogleService-Info.plist */,
+			);
+			path = "Auth NTT";
+			sourceTree = "<group>";
+		};
+		9426D8E125B9252200044A26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9426D8F325B9269500044A26 /* Localizable.strings */,
+				9426D8E225B9252B00044A26 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9426D8F725B926C300044A26 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9426D8F825B926C800044A26 /* App */,
+				9426D90725B92CA300044A26 /* Modules */,
+				9426D93E25B92D7700044A26 /* Storyboard */,
+				9426D93A25B92D6A00044A26 /* Services */,
+				9426D92125B92D3700044A26 /* Managers */,
+				9426D92825B92D4200044A26 /* Utils */,
+				9426D92E25B92D5D00044A26 /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9426D8F825B926C800044A26 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9426D8CA25B9243C00044A26 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9426D90725B92CA300044A26 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				94F2314E25B97143002F08DC /* DetailModule */,
+				9426D90825B92CA300044A26 /* LoginModule */,
+				9426D90E25B92CA300044A26 /* HomeModule */,
+				9426D91425B92CA300044A26 /* SignUpModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		9426D90825B92CA300044A26 /* LoginModule */ = {
+			isa = PBXGroup;
+			children = (
+				9426D90A25B92CA300044A26 /* LoginContract.swift */,
+				9426D90925B92CA300044A26 /* LoginInteractor.swift */,
+				9426D90B25B92CA300044A26 /* LoginViewController.swift */,
+				9426D90C25B92CA300044A26 /* LoginPresenter.swift */,
+				9426D90D25B92CA300044A26 /* LoginRouter.swift */,
+			);
+			path = LoginModule;
+			sourceTree = "<group>";
+		};
+		9426D90E25B92CA300044A26 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				94F231A425B98BB3002F08DC /* HomeContract.swift */,
+				94F231A525B98BB3002F08DC /* HomePresenter.swift */,
+				94F231A625B98BB3002F08DC /* HomeRouter.swift */,
+				94F231A725B98BB3002F08DC /* HomeViewController.swift */,
+				94F231A825B98BB3002F08DC /* HomeInteractor.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		9426D91425B92CA300044A26 /* SignUpModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignUpModule;
+			sourceTree = "<group>";
+		};
+		9426D92125B92D3700044A26 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9426D92225B92D3700044A26 /* APIClient.swift */,
+				9426D92325B92D3700044A26 /* APIManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		9426D92825B92D4200044A26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9426D92A25B92D4200044A26 /* ViewController+Extention.swift */,
+				94F231D925B9EE0E002F08DC /* ConvertData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9426D92E25B92D5D00044A26 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9426D92F25B92D5D00044A26 /* Storages */,
+				9426D93225B92D5D00044A26 /* Endpoints */,
+				9426D93425B92D5D00044A26 /* Entities */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9426D92F25B92D5D00044A26 /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				9426D93025B92D5D00044A26 /* KeyStore.swift */,
+				9426D93125B92D5D00044A26 /* LocalStore.swift */,
+			);
+			path = Storages;
+			sourceTree = "<group>";
+		};
+		9426D93225B92D5D00044A26 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				9426D93325B92D5D00044A26 /* Endpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		9426D93425B92D5D00044A26 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				94F231D525B9EBEE002F08DC /* ErrorService.swift */,
+				94F231DC25B9F15C002F08DC /* Book.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9426D93A25B92D6A00044A26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9426D93B25B92D6A00044A26 /* AuthService.swift */,
+				94F231D225B9E6F2002F08DC /* BookService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9426D93E25B92D7700044A26 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				94F2319525B98B68002F08DC /* Detail.storyboard */,
+				94F231A325B98BB3002F08DC /* Home.storyboard */,
+				9426D94225B92D7700044A26 /* LaunchScreen.storyboard */,
+				9426D94425B92D7700044A26 /* Main.storyboard */,
+				9426D94625B92D7700044A26 /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		94F2314E25B97143002F08DC /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				94F2319625B98B68002F08DC /* DetailContract.swift */,
+				94F2319725B98B68002F08DC /* DetailPresenter.swift */,
+				94F2319825B98B68002F08DC /* DetailRouter.swift */,
+				94F2319925B98B68002F08DC /* DetailViewController.swift */,
+				94F2319A25B98B68002F08DC /* DetailInteractor.swift */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9426D8C625B9243C00044A26 /* Auth NTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9426D8DB25B9243D00044A26 /* Build configuration list for PBXNativeTarget "Auth NTT" */;
+			buildPhases = (
+				E01FD5D0F76C655B94C6CDC6 /* [CP] Check Pods Manifest.lock */,
+				9426D8C325B9243C00044A26 /* Sources */,
+				9426D8C425B9243C00044A26 /* Frameworks */,
+				9426D8C525B9243C00044A26 /* Resources */,
+				42363506D730B99887CBFADB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Auth NTT";
+			productName = "Auth NTT";
+			productReference = 9426D8C725B9243C00044A26 /* Auth NTT.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9426D8BF25B9243C00044A26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					9426D8C625B9243C00044A26 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 9426D8C225B9243C00044A26 /* Build configuration list for PBXProject "Auth NTT" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				id,
+			);
+			mainGroup = 9426D8BE25B9243C00044A26;
+			productRefGroup = 9426D8C825B9243C00044A26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9426D8C625B9243C00044A26 /* Auth NTT */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9426D8C525B9243C00044A26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9426D8F125B9269500044A26 /* Localizable.strings in Resources */,
+				946668F425BA7E4C00A982BA /* GoogleService-Info.plist in Resources */,
+				9426D8E325B9252B00044A26 /* Assets.xcassets in Resources */,
+				9426D94D25B92D7700044A26 /* Main.storyboard in Resources */,
+				94F231A925B98BB3002F08DC /* Home.storyboard in Resources */,
+				94F2319B25B98B68002F08DC /* Detail.storyboard in Resources */,
+				9426D94C25B92D7700044A26 /* LaunchScreen.storyboard in Resources */,
+				9426D94E25B92D7700044A26 /* Login.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42363506D730B99887CBFADB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Auth NTT/Pods-Auth NTT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Auth NTT/Pods-Auth NTT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Auth NTT/Pods-Auth NTT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E01FD5D0F76C655B94C6CDC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Auth NTT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9426D8C325B9243C00044A26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94F231AB25B98BB3002F08DC /* HomePresenter.swift in Sources */,
+				94F2319C25B98B68002F08DC /* DetailContract.swift in Sources */,
+				94F2319E25B98B68002F08DC /* DetailRouter.swift in Sources */,
+				94F231AE25B98BB3002F08DC /* HomeInteractor.swift in Sources */,
+				94F2319F25B98B68002F08DC /* DetailViewController.swift in Sources */,
+				9426D91825B92CA300044A26 /* LoginPresenter.swift in Sources */,
+				9426D92C25B92D4200044A26 /* ViewController+Extention.swift in Sources */,
+				94F231AD25B98BB3002F08DC /* HomeViewController.swift in Sources */,
+				94F231D325B9E6F2002F08DC /* BookService.swift in Sources */,
+				9426D91625B92CA300044A26 /* LoginContract.swift in Sources */,
+				94F2319D25B98B68002F08DC /* DetailPresenter.swift in Sources */,
+				9426D93625B92D5D00044A26 /* LocalStore.swift in Sources */,
+				9426D93C25B92D6A00044A26 /* AuthService.swift in Sources */,
+				9426D8CB25B9243C00044A26 /* AppDelegate.swift in Sources */,
+				9426D92525B92D3700044A26 /* APIManager.swift in Sources */,
+				94F231A025B98B68002F08DC /* DetailInteractor.swift in Sources */,
+				94F231D625B9EBEE002F08DC /* ErrorService.swift in Sources */,
+				94F231DA25B9EE0E002F08DC /* ConvertData.swift in Sources */,
+				94F231AA25B98BB3002F08DC /* HomeContract.swift in Sources */,
+				9426D91725B92CA300044A26 /* LoginViewController.swift in Sources */,
+				9426D92425B92D3700044A26 /* APIClient.swift in Sources */,
+				9426D93525B92D5D00044A26 /* KeyStore.swift in Sources */,
+				9426D93725B92D5D00044A26 /* Endpoints.swift in Sources */,
+				94F231DD25B9F15C002F08DC /* Book.swift in Sources */,
+				9426D91925B92CA300044A26 /* LoginRouter.swift in Sources */,
+				9426D91525B92CA300044A26 /* LoginInteractor.swift in Sources */,
+				94F231AC25B98BB3002F08DC /* HomeRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9426D8F325B9269500044A26 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9426D8F225B9269500044A26 /* en */,
+				9426D8F525B9269900044A26 /* id */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		9426D94225B92D7700044A26 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9426D94325B92D7700044A26 /* Base */,
+				94F2316425B97941002F08DC /* en */,
+				94F2316625B97944002F08DC /* id */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9426D94425B92D7700044A26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9426D94525B92D7700044A26 /* Base */,
+				94F231CE25B9E301002F08DC /* en */,
+				94F231D025B9E303002F08DC /* id */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9426D8D925B9243D00044A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9426D8DA25B9243D00044A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9426D8DC25B9243D00044A26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5A8CC107F1A5465C7CCA271 /* Pods-Auth NTT.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP23LW4W9X;
+				INFOPLIST_FILE = "Auth NTT/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dodips.authntt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9426D8DD25B9243D00044A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B24BD86212375EC3146F655 /* Pods-Auth NTT.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QP23LW4W9X;
+				INFOPLIST_FILE = "Auth NTT/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dodips.authntt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9426D8C225B9243C00044A26 /* Build configuration list for PBXProject "Auth NTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9426D8D925B9243D00044A26 /* Debug */,
+				9426D8DA25B9243D00044A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9426D8DB25B9243D00044A26 /* Build configuration list for PBXNativeTarget "Auth NTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9426D8DC25B9243D00044A26 /* Debug */,
+				9426D8DD25B9243D00044A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9426D8BF25B9243C00044A26 /* Project object */;
+}

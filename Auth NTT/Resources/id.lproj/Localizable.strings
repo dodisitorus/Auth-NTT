@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  AuthNTT
+
+  Created by Dodi Sitorus on 20/01/21.
+  
+*/
+
+
+"signIn" = "Masuk";
+"username" = "Name pengguna";
+"password" = "Kata sandi";
+"DonthaveaccountSignUp" = "Tidak mempunyai akun ? daftar";
+"signInWith" = "Masuk dengan";
+"signInUpWith"= "Masuk atau Mendaftar dengan";
+"detail" = "Detil";
+"editBook" = "Ubah Buku";
+"save" = "Simpan";
+"name" = "Nama";
+"description" = "Deskripsi";
+"lastEditAt" = "Terakhir diubah pada :";
+"createdAt" = "Dibuat pada :";
+"success" = "Berhasil";
+"failed" = "Gagal";
+"createNewBook" = "Buat Buku Baru";
+"nameCannotEmpty" = "Nama buku tidak boleh kosong";
+"descCannotEmpty" = "Deskripsi buku tidak boleh kosong";
+"pleaseCheckInput" = "Silahkan periksa masukan";
+"greetingMainScreen" = "Buku apa yang kamu miliki hari ini ?. Tambahkan buku yang kamu punya disini.";
+"warningLogout" = "Apakah anda ingin keluar dari Akun ini ?";
+"yes" = "Ya";
+"cancel" = "Batal";
+"profile" = "Profil";
+"signout" = "Keluat";
+"searchBook" = "Cari Buku";
+"welcome" = "Selamat Datang";
