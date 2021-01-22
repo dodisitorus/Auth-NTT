@@ -1,0 +1,36 @@
+/* 
+  Localizable.strings
+  AuthNTT
+
+  Created by Dodi Sitorus on 20/01/21.
+  
+*/
+
+
+"signIn"= "Sign in";
+"username" = "Username";
+"password" = "Password";
+"DonthaveaccountSignUp"= "Don’t have account? Sign Up";
+"signInWith"= "Sign in With";
+"signInUpWith"= "Sign in or Sign Up With";
+"detail" = "Detail";
+"editBook" = "Edit Book";
+"createNewBook" = "Create New Book";
+"save" = "Save";
+"name" = "Name";
+"description" = "Description";
+"lastEditAt" = "Last modified at :";
+"createdAt" = "Created at :";
+"success" = "Success";
+"failed" = "Failed";
+"nameCannotEmpty" = "Book Name cannot empty";
+"descCannotEmpty" = "Book Description cannot empty";
+"pleaseCheckInput" = "Please check your input";
+"greetingMainScreen" = "What book do you have today? Add the books you have here.";
+"warningLogout" = "Do you want to sign out this account?";
+"yes" = "Yes";
+"cancel" = "Cancel";
+"profile" = "Profile";
+"signout" = "Sign Out";
+"searchBook" = "Search Book";
+"welcome" = "Welcome";
