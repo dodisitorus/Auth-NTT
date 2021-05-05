@@ -25,5 +25,3 @@ Screenshot:
 ![Image of Login Page](https://i.ibb.co/D1g730w/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2021-01-22-at-12-48-36.png)
 
 ![Image of Main Page](https://i.ibb.co/DkdLqvW/Simulator-Screen-Shot-i-Phone-12-Pro-Max-2021-01-22-at-12-50-14.png)
-
-https://testflight.apple.com/join/eqw5yIrR
