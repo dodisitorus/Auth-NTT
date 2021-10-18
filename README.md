@@ -17,7 +17,7 @@ Features:
 
 Technology:
 1. Firebase/Auth
-2. VIPER (design pattern)
+2. VIPER 
 3. RxSwift (Reactive programming in Swift)
 
 Screenshot:
